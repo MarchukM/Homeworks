@@ -23,11 +23,15 @@ public class SimpleStack {
         return stackArr[top--];
     }
 
+    public char peek() {
+        return stackArr[top];
+    }
+
     public boolean isEmpty() {
         return top == -1;
     }
 
-    public int getSize(){
+    public int getSize() {
         return top + 1;
     }
 }
